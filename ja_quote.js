@@ -12,6 +12,8 @@
    quotation tag in the Web page.
 
 */
+
+//this is for the random int function, having the min and max
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -19,6 +21,7 @@ var randomQ = randomInt(0, 9);
 var quote = document.getElementById("q");
 quote.textContent = getQuote(randomQ);
 
+//this is the get quote function.
 function getQuote(n) {
    var quotes = [
    "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
