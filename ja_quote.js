@@ -4,15 +4,20 @@
    Case Problem 3
 
    Random Jane Austen Quote Generator
-   Author: 
-   Date:   
+   Author: Melinda Chirila
+   Date:   2-18-19
    
    This script randomly generates a Jane Austen quote from
    a list of 10 quotes and writes that quote into the first
    quotation tag in the Web page.
 
 */
-
+function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+var randomQ = randomInt(0, 9);
+var quote = document.getElementById("q");
+quote.textContent = getQuote(randomQ);
 
 function getQuote(n) {
    var quotes = [
